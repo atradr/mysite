@@ -1,0 +1,413 @@
+/* This extends the page of course!  No need for a page-extender.*/
+html {
+    /*height: 150em;*/
+    color: #555555;
+}
+
+body {
+    /* Definitely need to play with this. */
+    font-family: Trebuchet MS;
+    font-size: 18px;
+}
+
+header {
+    margin: 2em;
+}
+
+header img {
+    position: fixed;
+    transform: scale(.5);
+    padding: 5px;
+    margin: -1em;
+    margin-left: 3em;
+    display: inline-block;
+    width: 128px;
+}
+
+header nav {
+    top: 4em;
+    right: 5.5em;
+    position: fixed;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 0.83em;
+}
+
+header nav ul li a {
+    color: #79B7F9;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+article .bigblock {
+    width: 13em;
+    height: 18em;
+    position: fixed;
+    background: none;
+    top: 14em;
+    border-radius: 30px;
+}
+
+article .webdev {
+    left: 18%;
+}
+
+article .gamedev {
+    right: 18%;
+}
+
+.bigblock img {
+    position: absolute;
+    top: 21%;
+    padding: 1em;
+    opacity: .4;
+}
+
+div p {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+
+@keyframes jiggle { 
+  0% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  3.4% { transform: matrix3d(1.016, 0, 0, 0, 0, 1.02, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  4.7% { transform: matrix3d(1.022, 0, 0, 0, 0, 1.03, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  6.81% { transform: matrix3d(1.033, 0, 0, 0, 0, 1.045, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  9.41% { transform: matrix3d(1.044, 0, 0, 0, 0, 1.058, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  10.21% { transform: matrix3d(1.047, 0, 0, 0, 0, 1.061, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  13.61% { transform: matrix3d(1.056, 0, 0, 0, 0, 1.067, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  14.11% { transform: matrix3d(1.057, 0, 0, 0, 0, 1.067, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  17.52% { transform: matrix3d(1.06, 0, 0, 0, 0, 1.062, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  18.72% { transform: matrix3d(1.061, 0, 0, 0, 0, 1.059, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  21.32% { transform: matrix3d(1.06, 0, 0, 0, 0, 1.053, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  24.32% { transform: matrix3d(1.058, 0, 0, 0, 0, 1.048, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  25.23% { transform: matrix3d(1.057, 0, 0, 0, 0, 1.047, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  29.03% { transform: matrix3d(1.053, 0, 0, 0, 0, 1.045, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  29.93% { transform: matrix3d(1.052, 0, 0, 0, 0, 1.045, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  35.54% { transform: matrix3d(1.049, 0, 0, 0, 0, 1.048, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  36.74% { transform: matrix3d(1.049, 0, 0, 0, 0, 1.049, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  41.04% { transform: matrix3d(1.048, 0, 0, 0, 0, 1.051, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  44.44% { transform: matrix3d(1.048, 0, 0, 0, 0, 1.052, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  52.15% { transform: matrix3d(1.05, 0, 0, 0, 0, 1.05, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  59.86% { transform: matrix3d(1.05, 0, 0, 0, 0, 1.05, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  63.26% { transform: matrix3d(1.05, 0, 0, 0, 0, 1.05, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  75.28% { transform: matrix3d(1.05, 0, 0, 0, 0, 1.05, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  85.49% { transform: matrix3d(1.05, 0, 0, 0, 0, 1.05, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  90.69% { transform: matrix3d(1.05, 0, 0, 0, 0, 1.05, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  100% { transform: matrix3d(1.05, 0, 0, 0, 0, 1.05, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); } 
+}
+
+article .bigblock:hover {
+    animation: jiggle 1000ms linear both;
+}
+
+article .bigblock:hover img {
+    opacity: .9;
+    transition: all .5s ease-out;
+}
+
+
+article .gamedev .pong {
+    opacity: .05;
+}
+
+article .gamedev .pong div {
+    background: blue;
+    position: absolute;
+    width: 3em;
+    height: 1em;
+    border-radius: 3px;
+    box-shadow: none;
+}
+
+@keyframes ballanim {
+    0% {top: 1.7em; left: 2em;}
+    28.5% {top: 9.7em; left:10.5em;}
+    46.3% {top: 15.3em; left: 5.5em;}
+    60.5% {top: 10.7em; left: 1.5em;}
+    100% {top: 1.7em; left: 10.5em;}
+}
+
+#ball {
+    top: 1.7em;
+    left: 2em;
+    width: 1em;
+    animation: ballanim 5s linear infinite alternate;
+}
+
+#midline {
+    left: 1em;
+    top: 9.4em;
+    height: 0;
+    width: 11em;
+    border: 1px dashed black;
+    background: none;
+}
+
+@keyframes paddleanim {
+    0% {left: 1.8em;}
+    100% {left: 8.7em;}
+}
+
+#paddle1 {
+    top: 1em;
+    left: 1.8em;
+    animation: paddleanim 5s linear infinite alternate;
+}
+
+#paddle2 {
+    top: 16em;
+    right: 2em;
+    animation: paddleanim 5s ease-in infinite alternate-reverse;
+}
+
+article div .site {
+    opacity: .05;
+}
+
+article div .site div {
+    background: blue;
+    width: 3em;
+    height: 1em;
+    position: absolute;
+    border-radius: 3px;
+    box-shadow: none;
+}
+
+.site div:hover {
+    animation: jiggle 1000ms linear both;
+}
+
+@keyframes titleanim {
+    0% {top: 1em; left: 1em; width: 11em; height: 2em;}
+    10% {top: 1em; left: 1em; width: 11em; height: 2em;}
+    28% {left: 1em; top: 1em; width: 11em; height: 3em;}
+    38% {left: 1em; top: 1em; width: 11em; height: 3em;}
+    62% {left: 1em; top: 1em; width: 2em; height: 16em;}
+    72% {left: 1em; top: 1em; width: 2em; height: 16em;}
+    90% {left: 1em; top: 9em; width: 5em; height: 7em;}
+    100% {left: 1em; top: 9em; width: 5em; height: 7em;}
+}
+
+.site #title {
+    width: 11em;
+    height: 2em;
+    top: 1em;
+    left: 1em;
+    animation: titleanim 10s linear infinite alternate;
+}
+
+@keyframes sideranim {
+    0% {left: 1em; top: 4em; width: 3em; height: 10em;}
+    10% {left: 1em; top: 4em; width: 3em; height: 10em;}
+    28% {left: 1em; top: 5em; width: 11em; height: 3em;}
+    38% {left: 1em; top: 5em; width: 11em; height: 3em;}
+    62% {left: 4em; top: 1em; width: 2em; height: 16em;}
+    72% {left: 4em; top: 1em; width: 2em; height: 16em;}
+    90% {left: 1em; top: 1em; width: 5em; height: 7em;}
+    100% {left: 1em; top: 1em; width: 5em; height: 7em;}
+}
+
+.site #sider {
+    width: 3em;
+    height: 11.9em;
+    top: 3.2em;
+    left: 1em;
+    animation: sideranim 10s linear infinite alternate;
+}
+
+@keyframes mainanim {
+    0% {left: 5em; top: 4em; width: 7em; height: 10em;}
+    10% {left: 5em; top: 4em; width: 7em; height: 10em;}
+    28% {left: 1em; top: 9em; width: 11em; height: 3em;}
+    38% {left: 1em; top: 9em; width: 11em; height: 3em;}
+    62% {left: 7em; top: 1em; width: 2em; height: 16em;}
+    72% {left: 7em; top: 1em; width: 2em; height: 16em;}
+    90% {left: 7em; top: 1em; width: 5em; height: 7em;}
+    100% {left: 7em; top: 1em; width: 5em; height: 7em;}
+}
+
+.site #main {
+    width: 7.8em;
+    height: 11.9em;
+    top: 3.2em;
+    left: 4.2em;
+    animation: mainanim 10s linear infinite alternate;
+}
+
+@keyframes footanim {
+    0% {left: 1em; top: 15em; width: 11em; height: 2em;}
+    10% {left: 1em; top: 15em; width: 11em; height: 2em;}
+    28% {left: 1em; top: 13em; width: 11em; height: 3em;}
+    38% {left: 1em; top: 13em; width: 11em; height: 3em;}
+    62% {left: 10em; top: 1em; width: 2em; height: 16em;}
+    72% {left: 10em; top: 1em; width: 2em; height: 16em;}
+    90% {left: 7em; top: 9em; width: 5em; height: 7em;}
+    100% {left: 7em; top: 9em; width: 5em; height: 7em;}
+}
+
+.site #foot {
+    width: 11em;
+    height: 1.4em;
+    top: 15.3em;
+    left: 1em;
+    animation: footanim 10s linear infinite alternate;
+}
+
+footer .contact {
+    width: 10%;
+    height: 10em;
+    position: absolute;
+    margin: auto;
+    top: 103em;
+    left: 45%;
+    background: none;
+    border-radius: 20px;
+}
+
+footer .contact:hover {
+    animation: jiggle 1000ms linear both;
+}
+
+@media (max-width: 1000px) {
+    footer .contact {
+        position: fixed;
+        top: 36em;
+        width: 10em;
+        left: 41%;
+        height: 5em;
+    }
+}
+
+@media (max-width: 767px) {
+    
+    html {
+        height: 100em;
+    }
+    
+    header img {
+        position: relative;
+        margin: auto;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    
+    /* margin:auto; and width: 80%; center the element without stacking the li elements. */
+    header nav {
+        top: 0;
+        right: 0;
+        margin: auto;
+        width: 11.1em;
+        clear: both;
+        position: relative;
+    }
+    
+    header nav ul li {
+        margin-right: .3em;
+    }
+    
+    header nav ul li a {
+        font-size: 1em;
+    }
+    
+    body article .bigblock {
+        width: 13em;
+        margin: 2em auto;
+        margin-bottom: 6em;
+        height: 18em;
+        position: relative;
+        border-radius: 30px;
+    }
+    
+    article div p {
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        -ms-transform: translate(-50%);
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+    
+    article .gamedev #gamedevp {
+        left: 16%;
+    }
+    
+    article .gamedev #gamedevlogo {
+        transform: translate(30%, 25%);
+    }
+    
+    article .webdev #webdevp {
+        left: 16%;
+    }
+    
+    article .webdev #webdevlogo {
+        transform: translate(100%, 25%);
+    }
+    
+    body article div .pong {
+        top: -2em;
+    }
+    
+    body article .webdev {
+        left: 0 !important;
+        top: 0 !important;
+    }
+    
+    body article .gamedev {
+        clear: left;
+        left: 0 !important;
+        top: 0 !important;
+        right: 0 !important;
+    }
+
+    article div .info {
+        width: 8em;
+        height: 8em;
+        position: fixed;
+        top: 18em;
+        border-radius: 10px;
+    }
+
+    article .webdev .info {
+        display: none;
+    }
+    
+    article .gamedev .info {
+        display: none;
+    }
+    
+    footer .bouncer {
+        display: none;
+    }
+    
+    footer .contact {
+        position: absolute;
+        width: 50%;
+        margin: auto;
+        left: 25%; 
+        top: 65em;
+        height: 10em;
+    }
+}
+
+@media (max-width: 320px) {
+    header .tagline {
+        display: none;
+    }
+    
+    header nav {
+        width: 120%;
+    }
+    
+    article div {
+        width: 90%;
+    }
+}
+

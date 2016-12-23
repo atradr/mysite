@@ -1,0 +1,83 @@
+@font-face {
+    font-family: "Rounded Elegance";
+    src: url(../images/Rounded_Elegance.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Upheaval TT (BRK)";
+    src: url(../images/upheavtt.ttf) format("truetype");
+}
+
+body {
+    /* Definitely need to play with this. */
+    font-family: "Rounded Elegance", Tahoma, sans-serif;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    margin: 2em;
+    text-align: center;
+}
+
+header #logo {
+    position: relative;
+    display: inline-block;
+    width: 96px;
+    box-shadow: 5px 5px rgba(0, 0, 0, .05);
+}
+
+header #logo:hover {
+    animation: jiggle 1000ms linear both;
+}
+
+/* margin:auto; and width: 80%; center the element without stacking the li elements. */
+header nav {
+    position: relative;
+    text-align: center;
+    color: rgb(242, 132, 39);
+}
+
+header nav ul:hover {
+    animation: jiggle 1000ms linear both;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: .3em;
+}
+
+header nav ul li a {
+    color: #79B7F9;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+
+
+
+footer .contact {
+    margin-top: 7em;
+    margin-bottom: 5em;
+    text-align: center;
+}
+
+.contact a {
+    display: inline-block;
+    position: relative;
+    text-align: left;
+    width: 64px;
+}
+
+.contact a {
+    opacity: .5;
+}
+
+footer .contact a:hover {
+    opacity: 1;
+    transition: all .5s ease-out;
+    animation: jiggle 1000ms linear both;
+} 
