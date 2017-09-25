@@ -1,32 +1,24 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Homepage of Austin Trad Rogers</title>
+        <title>Austin Trad Rogers</title>
+
         <link rel="stylesheet" type="text/css" href="css/reset.css">
-        <!-- needs ?var so that browsers update the sheet -->
-        <link rel="stylesheet" type="text/css" href="css/style.css?v=1.7">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
         <link rel="stylesheet" type="text/css" href="css/header.css">
+
         <!-- makes the icon appear in the tab -->
         <link rel="icon" href="images/logo.png">
+
         <!-- This meta tag is needed for @media ('max-width')-->
         <meta name="viewport" content="width=device-width" />
     </head>
+
     <body>
-        
-        <header>
-            <nav>
-                    <a href="http://www.austintradrogers.com">
-                        <img id="logo" src="images/logo.png" alt="Austin Trad Rogers" title="Austin Trad Rogers">
-                    </a>
-                <ul>
-                    <li>about me</li>
-                </ul>
-                <p id="intro">hello i'm austin rogers</p>
-            </nav>
-        </header>
+        <script src="templates/header.js"></script>
         
         <article>
-            
             <div class="blockcontainer">
                 <div class="bigblock articles">
                     <div class="inside site">
@@ -42,30 +34,32 @@
                 </div>
                 
                 <a href="gamedev.html">
-                <div class="bigblock gamedev">
-                    <div class="inside pong">
-                        <div class="paddle" id="paddle1"></div>
-                        <div id="ball"></div>
-                        <div class="paddle" id="paddle2"></div>
+                    <div class="bigblock gamedev">
+                        <div class="inside pong">
+                            <div class="paddle" id="paddle1"></div>
+                            <div id="ball"></div>
+                            <div class="paddle" id="paddle2"></div>
+                        </div>
+                        
+                        <img src="images/game-dev-logo.png" alt="Game Development">
+                        <p class="comingsoon">In Progress!</p>
                     </div>
-                    
-                    <img src="images/game-dev-logo.png" alt="Game Development">
-                    <p class="comingsoon">In Progress!</p>
-                </div>
                 </a>
                 
-                <div class="bigblock art">
-                    <div class="inside artanim">
-                        <div id="bouncer1" class="bouncer"></div>
-                        <div id="bouncer2" class="bouncer"></div>
-                        <div id="bouncer3" class="bouncer"></div>
+                <a href="art.html">
+                    <div class="bigblock art">
+                        <div class="inside artanim">
+                            <div id="bouncer1" class="bouncer"></div>
+                            <div id="bouncer2" class="bouncer"></div>
+                            <div id="bouncer3" class="bouncer"></div>
+                        </div>
+                        
+                        <img src="images/art-logo.png" alt="Art">
+                        
+                        <p class="comingsoon">In Progress!</p>
                     </div>
-                    
-                    <img src="images/art-logo.png" alt="Art">
-                    
-                    <p class="comingsoon">Coming Soon! :)</p>
-                </div>
-                
+                </a>
+
                 <div class="bigblock programs">
                     <div class="inside otheranim">
                         <div id="squished1" class="otherblock"></div>
@@ -81,21 +75,6 @@
             </div>
         </article>
         
-        <footer>
-            <div class="contact">
-                <a href="https://twitter.com/austintradr" target="_blank">
-                    <img src="images/twitterbird.png"/>
-                </a>
-                
-                <a href="mailto:austin@austintradrogers.com?Subject=Contacing%20from%20site">
-                    <img src="images/email-icon.png"/>
-                </a>
-                
-                <a href="https://github.com/atradr" target="_blank">
-                    <img src="images/github-icon.png" />
-                </a>
-            </div>
-        </footer>
-        
+        <script src="templates/footer.js"></script>
     </body>
 </html>

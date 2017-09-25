@@ -1,0 +1,332 @@
+#intro {
+    width: 100%;
+    display: none;
+    left: 50%;
+    transform: translate(-50%);
+    color: black;
+    font-size: 72px;
+    position: absolute;
+}
+
+header #logolink:hover ~ #intro {
+    display: inline-block;
+}
+
+header nav div ul:hover > #intro {
+    display: inline-block;
+}
+
+
+@media (max-width: 913px){
+    #intro {
+        font-size: 36px;
+    }
+}
+
+.bigblock img {
+    position: absolute;
+    top: 21%;
+    padding: 1em;
+    opacity: .4;
+}
+
+.comingsoon {
+    top: 15em;
+    left: 3em;
+    position: absolute;
+    color: black;
+    display: none;
+}
+
+.bigblock:hover img {
+    opacity: .9;
+    transition: all .5s ease-out;
+}
+
+.bigblock:hover .comingsoon {
+    display:block;
+}
+
+.pong div {
+    opacity: .2;
+    background: blue;
+    position: absolute;
+    width: 3em;
+    height: 1em;
+    border-radius: 3px;
+    box-shadow: 5px 5px black;
+}
+
+@keyframes ballanim {
+    0% {top: 1.7em; left: 2em;}
+    28.5% {top: 9.7em; left:10.5em;}
+    46.3% {top: 15.3em; left: 5.5em;}
+    60.5% {top: 10.7em; left: 1.5em;}
+    100% {top: 1.7em; left: 10.5em;}
+}
+
+#ball {
+    top: 1.7em;
+    left: 2em;
+    width: 1em;
+    animation: ballanim 5s linear infinite alternate;
+}
+
+@keyframes paddleanim {
+    0% {left: 1.8em;}
+    100% {left: 8.7em;}
+}
+
+#paddle1 {
+    top: 1em;
+    left: 1.8em;
+    animation: paddleanim 5s linear infinite alternate;
+}
+
+#paddle2 {
+    top: 16em;
+    right: 2em;
+    animation: paddleanim 5s ease-in infinite alternate-reverse;
+}
+
+.site div {
+    opacity: .2;
+    background: blue;
+    width: 3em;
+    height: 1em;
+    position: absolute;
+    border-radius: 3px;
+    box-shadow: 5px 5px black;
+}
+
+@keyframes titleanim {
+    0% {top: 1em; left: 1em; width: 11em; height: 2em;}
+    10% {top: 1em; left: 1em; width: 11em; height: 2em;}
+    28% {left: 1em; top: 1em; width: 11em; height: 3em;}
+    38% {left: 1em; top: 1em; width: 11em; height: 3em;}
+    62% {left: 1em; top: 1em; width: 2em; height: 16em;}
+    72% {left: 1em; top: 1em; width: 2em; height: 16em;}
+    90% {left: 1em; top: 9em; width: 5em; height: 7em;}
+    100% {left: 1em; top: 9em; width: 5em; height: 7em;}
+}
+
+.site #title {
+    width: 11em;
+    height: 2em;
+    top: 1em;
+    left: 1em;
+    animation: titleanim 10s linear infinite alternate;
+}
+
+@keyframes sideranim {
+    0% {left: 1em; top: 4em; width: 3em; height: 10em;}
+    10% {left: 1em; top: 4em; width: 3em; height: 10em;}
+    28% {left: 1em; top: 5em; width: 11em; height: 3em;}
+    38% {left: 1em; top: 5em; width: 11em; height: 3em;}
+    62% {left: 4em; top: 1em; width: 2em; height: 16em;}
+    72% {left: 4em; top: 1em; width: 2em; height: 16em;}
+    90% {left: 1em; top: 1em; width: 5em; height: 7em;}
+    100% {left: 1em; top: 1em; width: 5em; height: 7em;}
+}
+
+.site #sider {
+    width: 3em;
+    height: 11.9em;
+    top: 3.2em;
+    left: 1em;
+    animation: sideranim 10s linear infinite alternate;
+}
+
+@keyframes mainanim {
+    0% {left: 5em; top: 4em; width: 7em; height: 10em;}
+    10% {left: 5em; top: 4em; width: 7em; height: 10em;}
+    28% {left: 1em; top: 9em; width: 11em; height: 3em;}
+    38% {left: 1em; top: 9em; width: 11em; height: 3em;}
+    62% {left: 7em; top: 1em; width: 2em; height: 16em;}
+    72% {left: 7em; top: 1em; width: 2em; height: 16em;}
+    90% {left: 7em; top: 1em; width: 5em; height: 7em;}
+    100% {left: 7em; top: 1em; width: 5em; height: 7em;}
+}
+
+.site #main {
+    width: 7.8em;
+    height: 11.9em;
+    top: 3.2em;
+    left: 4.2em;
+    animation: mainanim 10s linear infinite alternate;
+}
+
+@keyframes footanim {
+    0% {left: 1em; top: 15em; width: 11em; height: 2em;}
+    10% {left: 1em; top: 15em; width: 11em; height: 2em;}
+    28% {left: 1em; top: 13em; width: 11em; height: 3em;}
+    38% {left: 1em; top: 13em; width: 11em; height: 3em;}
+    62% {left: 10em; top: 1em; width: 2em; height: 16em;}
+    72% {left: 10em; top: 1em; width: 2em; height: 16em;}
+    90% {left: 7em; top: 9em; width: 5em; height: 7em;}
+    100% {left: 7em; top: 9em; width: 5em; height: 7em;}
+}
+
+.site #foot {
+    width: 11em;
+    height: 1.4em;
+    top: 15.3em;
+    left: 1em;
+    animation: footanim 10s linear infinite alternate;
+}
+
+.artanim div {
+    opacity: .2;
+    background: blue;
+    position: absolute;
+    width: 1em;
+    height: 3em;
+    border-radius: 3px;
+    box-shadow: 5px 5px black;
+}
+
+@keyframes bounceranim1 {
+    0% {left: 2em; top: 15em; height: 1px; width: 1em;}
+    20% {left: 2em; top: 12em; height: 3em; width: 1em;}
+    25% {left: 2em; top: 12em; height: 3em; width: 1em;}
+    27% {top: 12.2em; height: 2.8em; width: 1.2em; left: 1.9em;}
+    30% {top: 12.2em; height: 2.8em; width: 1.2em; left: 1.9em;}
+    33% {top: 12em; height: 3em; width: 1em; left: 2em; transform: rotate(0deg);}
+    40% {top: 1em; width: 1em; height: 3em; left: 2em; transform: rotate(360deg);}
+    40.0001% {transform: rotate(0);}
+    42% {top: 1em; width: 2em; height: 1px; left: 1.5em; transform: rotate(0);}
+    67% {top: 1em; width: 1.2em; height: 1.5em; left: 1.8em;}
+    70% {top: 1em; width: 1.2em; height: 1.5em; left: 1.8em;}
+    85% {left: 2em; top: 13em; height: 2em; width: 1em;}
+    90% {left: 2em; top: 15em; height: 1px; width: 1em;}
+}
+
+#bouncer1 {
+    left: 2em;
+    top: 15em;
+    height: 1px;
+    width: 1em;
+    animation: bounceranim1 5s cubic-bezier(.21,.68,.68,.27) infinite normal;
+}
+
+@keyframes bounceranim2 {
+    0% {left: 6em; top: 15em; height: 1px; width: 1em;}
+    20% {left: 6em; top: 12em; height: 3em; width: 1em;}
+    25% {left: 6em; top: 12em; height: 3em; width: 1em;}
+    27% {top: 12.2em; height: 2.8em; width: 1.2em; left: 5.9em;}
+    30% {top: 12.2em; height: 2.8em; width: 1.2em; left: 5.9em;}
+    33% {top: 12em; height: 3em; width: 1em; left: 6em; transform: rotate(0);}
+    40% {top: 1em; width: 1em; height: 3em; left: 6em; transform: rotate(0);}
+    40.0001% {transform: rotate(0);}
+    42% {top: 1em; width: 2em; height: 1px; left: 5.5em;}
+    67% {top: 1em; width: 1.2em; height: 1.5em; left: 5.8em;}
+    70% {top: 1em; width: 1.2em; height: 1.5em; left: 5.8em;}
+    85% {left: 6em; top: 13em; height: 2em; width: 1em;}
+    90% {left: 6em; top: 15em; height: 1px; width: 1em;}
+}
+
+#bouncer2 {
+    left: 6em;
+    top: 15em;
+    height: 1px;
+    width: 1em;
+    animation: bounceranim2 5s cubic-bezier(.04,.51,.27,.94) infinite normal;
+}
+
+@keyframes bounceranim3 {
+    0% {left: 10em; top: 15em; height: 1px; width: 1em;}
+    20% {left: 10em; top: 12em; height: 3em; width: 1em;}
+    25% {left: 10em; top: 12em; height: 3em; width: 1em;}
+    27% {top: 12.2em; height: 2.8em; width: 1.2em; left: 9.9em;}
+    30% {top: 12.2em; height: 2.8em; width: 1.2em; left: 9.9em;}
+    33% {top: 12em; height: 3em; width: 1em; left: 10em; transform: rotate(0);}
+    40% {top: 1em; width: 1em; height: 3em; left: 10em; transform: rotate(-360deg);}
+    40.0001% {transform: rotate(0);}
+    42% {top: 1em; width: 2em; height: 1px; left: 9.5em;}
+    67% {top: 1em; width: 1.2em; height: 1.5em; left: 9.8em;}
+    70% {top: 1em; width: 1.2em; height: 1.5em; left: 9.8em;}
+    85% {left: 10em; top: 13em; height: 2em; width: 1em;}
+    90% {left: 10em; top: 15em; height: 1px; width: 1em;}
+}
+
+#bouncer3 {
+    left: 10em;
+    top: 15em;
+    height: 1px;
+    width: 1em;
+    animation: bounceranim3 5s cubic-bezier(.87,.22,.28,.87) infinite normal;
+}
+
+.otheranim div {
+    opacity: .2;
+    background: blue;
+    position: absolute;
+    left: 1em;
+    width: 11em;
+    height: 4em;
+    border-radius: 3px;
+    box-shadow: 5px 5px black;
+}
+
+@keyframes squished1anim {
+    0% {top: 13em; height: 4em;}
+
+    97% {top: 13em; height: 4em;}
+
+    100% {top: 17em; height: 0;}
+}
+
+#squished1 {
+    top: 0;
+    height: 0;
+    animation: squished1anim 5s cubic-bezier(.83,.27,.53,.79) infinite normal;
+}
+
+@keyframes squished2anim {
+    0% {top: 0; height: 0;}
+    15% {top: 0; height: 0;}
+    19% {top: 0; height: 4em;}
+
+    25% {top: 8.9em;}
+
+    94% {top: 8.9em; height: 4em;}
+    97% {top: 12.9em; height: 0;}
+    100% {top: 0; height: 0;}
+}
+#squished2 {
+    top: 0;
+    height: 0;
+    animation: squished2anim 5s cubic-bezier(.83,.27,.53,.79) infinite normal;
+}
+
+@keyframes squished3anim {
+    0%  {top: 0; height: 0;}
+    25% {top: 0; height: 0;}
+    29% {top: 0; height: 4em;}
+
+    32% {top: 4.8em;}
+
+    91.5% {top: 4.8em; height: 4em;}
+    94% {top: 8.8em; height: 0;}
+
+    100% {top: 0; height: 0;}
+}
+#squished3 {
+    top: 0;
+    height: 0;
+    animation: squished3anim 5s cubic-bezier(.83,.27,.53,.79) infinite normal;
+}
+
+@keyframes squisheranim {
+    0% {top: 0; height: 0;}
+
+    87% {top: 0; height: 0;}
+    91% {top: 0; height: 4em;}
+
+    100% {top: 13em; height: 4em;}
+}
+#squisher {
+    top: 0;
+    height: 0;
+    animation: squisheranim 5s linear infinite normal;
+}
