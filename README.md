@@ -1,2 +1,2 @@
 # My Site
-Just developing my website and learning git, thought I would do both at the same time.
+Developing my personal website and learning to use Git.
