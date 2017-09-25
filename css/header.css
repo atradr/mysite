@@ -38,7 +38,7 @@ header #logo:hover {
 header nav {
     position: relative;
     text-align: center;
-    color: rgb(242, 132, 39);
+    color: rgba(0, 0, 0, .8);
 }
 
 header nav div ul {
@@ -53,14 +53,13 @@ header nav ul:hover {
 
 header nav ul li {
     display: inline;
-    background: rgba(0, 0, 0, .8);
-    border-radius: 2px;
+    background: rgb(242, 132, 39);
+    border-radius: 5px;
     padding-right: 2px;
     padding-left: 2px;
 }
 
 header nav ul li a {
-    color: #79B7F9;
     text-decoration: none;
     font-size: 1em;
 }
@@ -69,8 +68,8 @@ header nav ul li a {
 
 
 footer .contact {
-    margin-top: 7em;
-    margin-bottom: 5em;
+    margin-top: 5em;
+    margin-bottom: 2em;
     text-align: center;
 }
 
