@@ -7,7 +7,9 @@ document.write('\
         </a>\
         <div>\
             <ul>\
-                <li>about me</li>\
+                <a href="">\
+                    <li>about me</li>\
+                </a>\
             </ul>\
         </div>\
         <p id="intro">hello i\'m austin rogers</p>\
