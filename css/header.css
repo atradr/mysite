@@ -27,7 +27,7 @@ header #logo {
     position: relative;
     display: inline-block;
     width: 96px;
-    border-radius: 5px;
+    border-radius: 3px;
 }
 
 header #logo:hover {
@@ -57,7 +57,7 @@ header nav ul:hover {
 header nav ul li {
     display: inline;
     background: rgb(242, 132, 39);
-    border-radius: 5px;
+    border-radius: 3px;
     padding-right: 2px;
     padding-left: 2px;
 }
