@@ -1,3 +1,8 @@
+html {
+    /*Interesting change in color, possible.*/
+    background:;rgb(0, 127, 165);rgb(44, 195, 242);*/
+}
+
 #intro {
     width: 100%;
     display: none;
@@ -47,15 +52,15 @@ header nav div ul:hover > #intro {
     display:block;
 }
 
-.pong div {
-    opacity: .2;
-    background: blue;
+.inside div {
+    background: rgb(44, 195, 242);rgb(0, 127, 165);
     position: absolute;
     width: 3em;
     height: 1em;
     border-radius: 3px;
-    box-shadow: 5px 5px black;
+    /*box-shadow: 5px 5px white;*/
 }
+
 
 @keyframes ballanim {
     0% {top: 1.7em; left: 2em;}
@@ -89,15 +94,6 @@ header nav div ul:hover > #intro {
     animation: paddleanim 5s ease-in infinite alternate-reverse;
 }
 
-.site div {
-    opacity: .2;
-    background: blue;
-    width: 3em;
-    height: 1em;
-    position: absolute;
-    border-radius: 3px;
-    box-shadow: 5px 5px black;
-}
 
 @keyframes titleanim {
     0% {top: 1em; left: 1em; width: 11em; height: 2em;}
@@ -175,16 +171,6 @@ header nav div ul:hover > #intro {
     animation: footanim 10s linear infinite alternate;
 }
 
-.artanim div {
-    opacity: .2;
-    background: blue;
-    position: absolute;
-    width: 1em;
-    height: 3em;
-    border-radius: 3px;
-    box-shadow: 5px 5px black;
-}
-
 @keyframes bounceranim1 {
     0% {left: 2em; top: 15em; height: 1px; width: 1em;}
     20% {left: 2em; top: 12em; height: 3em; width: 1em;}
@@ -257,15 +243,10 @@ header nav div ul:hover > #intro {
     animation: bounceranim3 5s cubic-bezier(.87,.22,.28,.87) infinite normal;
 }
 
-.otheranim div {
-    opacity: .2;
-    background: blue;
-    position: absolute;
+div .otheranim div {
     left: 1em;
     width: 11em;
     height: 4em;
-    border-radius: 3px;
-    box-shadow: 5px 5px black;
 }
 
 @keyframes squished1anim {
@@ -330,3 +311,4 @@ header nav div ul:hover > #intro {
     height: 0;
     animation: squisheranim 5s linear infinite normal;
 }
+

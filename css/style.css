@@ -31,8 +31,7 @@ html {
 
 .bigblock:hover {
     animation: jiggle 1000ms linear both;
-    box-shadow: 0 0 20px rgba(0, 0, 255, .2);
-    outline: 2px solid rgba(0, 0, 255, .2);
+    outline: 2px solid rgb(44, 195, 242);
 }
 
 a:active .bigblock {
