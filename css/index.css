@@ -243,19 +243,109 @@ header nav div ul:hover > #intro {
     animation: bounceranim3 5s cubic-bezier(.87,.22,.28,.87) infinite normal;
 }
 
-div .otheranim div {
+div .articleblock {
     left: 1em;
-    width: 11em;
-    height: 4em;
+    width: 0;
+    height: 1.5em;
 }
 
-@keyframes squished1anim {
-    0% {top: 13em; height: 4em;}
-
-    97% {top: 13em; height: 4em;}
-
-    100% {top: 17em; height: 0;}
+@keyframes line1anim {
+    0% {width: 0;}
+    6.25% {width: 11em;}
+    50% {width: 11em; left: 1em;}
+    66.25% {width: 0; left: 12em;}
 }
+
+#line1 {
+    top: 1em;
+    animation: line1anim 10s cubic-bezier(.62,.14,.85,.36) infinite normal;
+}
+
+@keyframes line2anim {
+    6.25% {width: 0;}
+    12.5% {width: 11em;}
+    56.25% {width: 11em; left: 1em;}
+    72.5% {width: 0; left: 12em;}
+}
+
+#line2 {
+    top: 3em;
+    animation: line2anim 10s cubic-bezier(.44,.73,.85,.36) infinite normal;
+}
+
+@keyframes line3anim {
+    12.5% {width: 0;}
+    18.75% {width: 11em;}
+    62.5% {width: 11em; left: 1em;}
+    78.75% {width: 0; left: 12em;}
+}
+
+#line3 {
+    top: 5em;
+    animation: line3anim 10s cubic-bezier(.17,.71,.5,.95) infinite normal;
+}
+
+@keyframes line4anim {
+    18.75% {width: 0;}
+    25% {width: 11em;}
+    68.75% {width: 11em; left: 1em;}
+    85% {width: 0; left: 12em;}
+}
+
+#line4 {
+    top: 7em;
+    animation: line4anim 10s cubic-bezier(.17,.71,.5,.95) infinite normal;
+}
+
+@keyframes line5anim {
+    25% {width: 0;}
+    31.25% {width: 11em;}
+    75% {width: 11em; left: 1em;}
+    91.25% {width: 0; left: 12em;}
+}
+
+#line5 {
+    top: 9em;
+    animation: line5anim 10s cubic-bezier(.44,.73,.85,.36) infinite normal;
+}
+
+@keyframes line6anim {
+    31.25% {width: 0;}
+    37.5% {width: 11em;}
+    81.25% {width: 11em; left: 1em;}
+    97.5% {width: 0; left: 12em;}
+}
+
+#line6 {
+    top:  11em;
+    animation: line6anim 10s cubic-bezier(.17,.71,.5,.95) infinite normal;
+}
+
+@keyframes line7anim {
+    37.5% {width: 0;}
+    43.75% {width: 11em;}
+    87.5% {width: 11em; left: 1em;}
+    100% {width: 0;}
+}
+
+#line7 {
+    top: 13em;
+    animation: line7anim 10s cubic-bezier(.44,.73,.85,.36) infinite normal;
+}
+
+@keyframes line8anim {
+    43.75% {width: 0;}
+    50% {width: 11em;}
+    93.75% {width: 11em; left: 1em;}
+    100% {width: 0; left: 12em;}
+}
+
+#line8 {
+    top: 15em;
+    animation: line8anim 10s cubic-bezier(.62,.14,.85,.36) infinite normal;
+}
+
+
 
 #squished1 {
     top: 0;
